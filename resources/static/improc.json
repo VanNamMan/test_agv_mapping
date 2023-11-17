@@ -1,0 +1,60 @@
+{
+    "flip":2,
+    "approxy_contour": true,
+    "epsilon": 0.001,
+    "preprocess": true,
+    "calib": [0.604, 0.716],
+    "signs": [1, 1, -1],
+    "camera_orient": "bottomleft",
+    "check_tape": "check_tape_use_color",
+    "check_tape_args":{
+        "0": {
+            "low": [0, 0, 45],
+            "high": [255, 255, 255],
+            "min_w": 200,
+            "min_h": 90,
+            "min_s": 20000,
+            "threshold": 35
+        },
+        "1": {
+            "low": [0, 0, 45],
+            "high": [255, 255, 255],
+            "min_w": 200,
+            "min_h": 90,
+            "min_s": 20000,
+            "threshold": 40
+        },
+        "2": {
+            "low": [0, 0, 45],
+            "high": [255, 255, 255],
+            "min_w": 200,
+            "min_h": 90,
+            "min_s": 20000,
+            "threshold": 35
+        },
+        "3": {
+            "low": [0, 0, 45],
+            "high": [255, 255, 255],
+            "min_w": 200,
+            "min_h": 90,
+            "min_s": 20000,
+            "threshold": 35
+        },
+        "4": {
+            "low": [0, 0, 45],
+            "high": [255, 255, 255],
+            "min_w": 200,
+            "min_h": 90,
+            "min_s": 20000,
+            "threshold": 40
+        },
+        "5": {
+            "low": [0, 0, 45],
+            "high": [255, 255, 255],
+            "min_w": 200,
+            "min_h": 90,
+            "min_s": 20000,
+            "threshold": 35
+        }
+    }
+}

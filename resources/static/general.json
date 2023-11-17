@@ -1,0 +1,37 @@
+{
+    "connections": {
+        "camera": {
+            "dtype": "HIK",
+            "feature_file": "",
+            "id": "0",
+            "is_color": false,
+            "use_feature": false
+        },
+        "comport": {
+            "baudrate": "9600",
+            "port": "COM20"
+        },
+        "lighting": {
+            "baudrate": "9600",
+            "port": "COM1"
+        },
+        "model": {
+            "cls_model": "",
+            "det_model": "",
+            "seg_model": "E:/Github/MyProjects/Main_Check_Align_Phone/src/resources/static/yolo/8s_cam_and_phone_last.pt"
+        },
+        "socket": {
+            "buffer_size": "1024",
+            "host": "localhost",
+            "port": "5000",
+            "socket": "TCPServer"
+        }
+    },
+    "general": {
+        "auto_start_pgm": true,
+        "image_dir": "D:\\Images",
+        "log_dir": "D:\\Images\\log",
+        "save_image": 2
+    },
+    "model": "EXAMPLE"
+}

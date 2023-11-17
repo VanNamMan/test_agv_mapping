@@ -1,0 +1,44 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource>
+<file alias="add_model">icon/add_model.png</file>
+<file alias="app">icon/app.ico</file>
+<file alias="apply">icon/apply.png</file>
+<file alias="camera">icon/camera.png</file>
+<file alias="camera_dont_open">icon/camera_dont_open.png</file>
+<file alias="capture">icon/capture.png</file>
+<file alias="choose_model">icon/choose_model.png</file>
+<file alias="comport">icon/comport.png</file>
+<file alias="connection">icon/connection.png</file>
+<file alias="crop">icon/crop.png</file>
+<file alias="debug">icon/debug.png</file>
+<file alias="del_model">icon/del_model.png</file>
+<file alias="draw">icon/draw.png</file>
+<file alias="fit_width">icon/fit_width.png</file>
+<file alias="fit_window">icon/fit_window.png</file>
+<file alias="font_color">icon/font_color.png</file>
+<file alias="home">icon/home.png</file>
+<file alias="left_arrow">icon/left_arrow.png</file>
+<file alias="light">icon/light.png</file>
+<file alias="load">icon/load.png</file>
+<file alias="management">icon/management.png</file>
+<file alias="manual">icon/manual.png</file>
+<file alias="minimize">icon/minimize.png</file>
+<file alias="model">icon/model.png</file>
+<file alias="model_manager">icon/model_manager.png</file>
+<file alias="ocr">icon/ocr.png</file>
+<file alias="open_file">icon/open_file.png</file>
+<file alias="original">icon/original.png</file>
+<file alias="play">icon/play.png</file>
+<file alias="quit">icon/quit.png</file>
+<file alias="reset">icon/reset.png</file>
+<file alias="save">icon/save.png</file>
+<file alias="save_as">icon/save_as.png</file>
+<file alias="setting">icon/setting.png</file>
+<file alias="start">icon/start.png</file>
+<file alias="stop">icon/stop.png</file>
+<file alias="tcp">icon/tcp.png</file>
+<file alias="teach">icon/teach.png</file>
+<file alias="zoom_in">icon/zoom_in.png</file>
+<file alias="zoom_out">icon/zoom_out.png</file>
+</qresource>
+</RCC>
