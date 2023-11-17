@@ -518,14 +518,18 @@ class Canvas(QWidget):
             if self.highlight:
                 pass
 
-        if self.moving and not self.lock:
+        if self.moving:
             v = self.current_pos - self.start_pos
-            if self.highlight:
+
+            if self.highlight and not self.lock:
                 self[self.idSelected].change(v)
-            elif self.idSelected is not None:
+
+            elif self.idSelected is not None and not self.lock:
                 self[self.idSelected].move(v)
+                
             else:
                 self.move_org(v*self.scale)
+
             self.start_pos = self.transformPos(ev.pos())
             if self.idSelected is not None:
                 self.changeShapeSignal.emit(self.idSelected)
@@ -573,7 +577,7 @@ class Canvas(QWidget):
         if key == Qt.Key_Q:
             if self.benable_drawing:
                 pass
-            
+
         elif key == Qt.Key_Escape:
             self.edit = False
 

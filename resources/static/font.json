@@ -1,12 +1,12 @@
 {
     "display": "#55aaff",
     "elevator": "#aaffff",
-    "fontsize": 10,
+    "fontsize": 50,
     "other": "#aaaa00",
-    "radius": 5,
+    "radius": 10,
     "speed": "#ff00ff",
     "standby": "#ffff7f",
-    "thickness": 1,
-    "transfer": "#00aa00",
+    "thickness": 3,
+    "transfer": "#ff0000",
     "turn": "#aaff7f"
 }
