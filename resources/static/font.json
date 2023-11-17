@@ -1,47 +1,12 @@
 {
-    "display": [
-        255,
-        255,
-        0,
-        175
-    ],
-    "elevator": [
-        170,
-        255,
-        255,
-        175
-    ],
-    "fontsize": 25,
-    "other": [
-        170,
-        255,
-        0,
-        175
-    ],
-    "radius": 20,
-    "speed": [
-        170,
-        170,
-        0,
-        175
-    ],
-    "standby": [
-        0,
-        170,
-        0,
-        175
-    ],
-    "thickness": 5,
-    "transfer": [
-        255,
-        0,
-        0,
-        175
-    ],
-    "turn": [
-        255,
-        0,
-        0,
-        175
-    ]
+    "display": "#55aaff",
+    "elevator": "#aaffff",
+    "fontsize": 10,
+    "other": "#aaaa00",
+    "radius": 5,
+    "speed": "#ff00ff",
+    "standby": "#ffff7f",
+    "thickness": 1,
+    "transfer": "#00aa00",
+    "turn": "#aaff7f"
 }

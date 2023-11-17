@@ -20,8 +20,8 @@ class Server(QObject):
         self._b_run = False
 
     def loop(self):
+        self.server.listen()
         while True:
-            self.server.listen()
             conn, addr = self.server.accept()
             if self._b_run:
                 Thread(target=self.recv_client, args=(conn, )).start()

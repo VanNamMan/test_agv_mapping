@@ -58,7 +58,7 @@ class Shape(QObject):
 
         color = font.get(self.config.table_name, None)
         if color is not None:
-            color = QColor(*color)
+            color = QColor(color)
             self.set_color(color)
             self.shapeColorChanged.emit(self.color)
 

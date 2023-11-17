@@ -185,9 +185,9 @@ class FontDlg(QDialog):
         if dlg.exec_():
             qcolor:QColor = dlg.selectedColor()
             qcolor.setAlpha(175)
-            rgba = qcolor.getRgb()
-            self.sender().setStyleSheet("background:rgba(%d,%d,%d,%d)" % rgba)
-            self._colors[table_name] = list(rgba)
+            hex_color = qcolor.name()
+            self.sender().setStyleSheet("background:%s" % hex_color)
+            self._colors[table_name] = hex_color
 
     def get(self):
         font = {
@@ -209,11 +209,10 @@ class FontDlg(QDialog):
                    self.ui.btn_color_standby, self.ui.btn_color_display, self.ui.btn_color_speed, self.ui.btn_color_other]
 
         for key, btn in zip(keys, buttons):
-            rgba = font.get(key, None)
-            if rgba:
-                self._colors[key] = rgba
-                strrgba = "%d,%d,%d,%d" % tuple(rgba)
-                btn.setStyleSheet(f"background:rgba({strrgba})")
+            hex_color = font.get(key, None)
+            if hex_color:
+                self._colors[key] = hex_color
+                btn.setStyleSheet(f"background:%s" % hex_color)
         
     def popup(self, font={}):
         self.set(font)
