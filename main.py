@@ -14,7 +14,7 @@ from server import Server
 mkdir(DATABASE_DIR)
 
 class MainWindow(QMainWindow, WindowMixin):
-    def __init__(self, parent: QWidget = None) -> None:
+    def __init__(self, parent: QWidget = None, host="localhost", port=8000) -> None:
         super().__init__(parent)
 
         self.ui = Ui_MainWindow()
@@ -38,12 +38,12 @@ class MainWindow(QMainWindow, WindowMixin):
         self.create_toolbar()
         self.create_db()
         self.load()
-        self.create_server()
+        self.create_server(host, port)
 
-    def create_server(self):
+    def create_server(self, host, port):
         self.server = Server(
-            host="localhost",
-            port=8000
+            host=host,
+            port=port
         )
         self.server.dataSignal.connect(self.recv_from_client)
         if not self.server.error:
@@ -327,9 +327,16 @@ class MainWindow(QMainWindow, WindowMixin):
 
 if __name__ == "__main__":
     import sys
+    import argparse 
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--host", default="localhost")
+    parser.add_argument("--port", default=8000, type=int)
+
+    args = parser.parse_args()
 
     app = QApplication(sys.argv)
-    win = MainWindow()
+    win = MainWindow(host=args.host, port=args.port)
     win.show()
 
     sys.exit(app.exec_())

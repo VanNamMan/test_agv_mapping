@@ -186,7 +186,7 @@ class FontDlg(QDialog):
             qcolor:QColor = dlg.selectedColor()
             qcolor.setAlpha(175)
             hex_color = qcolor.name()
-            self.sender().setStyleSheet("background:%s" % hex_color)
+            self.sender().setStyleSheet("border:None;background:%s" % hex_color)
             self._colors[table_name] = hex_color
 
     def get(self):
@@ -212,7 +212,7 @@ class FontDlg(QDialog):
             hex_color = font.get(key, None)
             if hex_color:
                 self._colors[key] = hex_color
-                btn.setStyleSheet(f"background:%s" % hex_color)
+                btn.setStyleSheet("border:None;background:%s" % hex_color)
         
     def popup(self, font={}):
         self.set(font)
